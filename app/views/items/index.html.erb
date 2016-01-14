@@ -1,0 +1,10 @@
+<h1>Register</h1>
+
+<% @items.each do |item| %>
+<ol>
+	<li>$<%=item.price%></li>
+</ol>
+<% end %>
+
+<%= link_to "New Item", new_item_path %><br />
+<%= link_to "Purchase", new_purchase_path %>

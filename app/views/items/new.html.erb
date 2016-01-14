@@ -1,0 +1,26 @@
+<p>New item </p>
+
+<%= form_for @item do |f| %>
+
+  <div class="field">
+  	<%= f.label :name %>
+  	<%= f.text_field :name %>
+  </div>
+
+  <div class="field"%>
+  	<%= f.label :product_code %>
+  	<%= f.text_field :product_code %>
+  </div>
+
+  <div class="field">
+  	<%= f.label :price %>
+  	<%= f.text_field :price %>
+  </div>
+
+  <div class="actions">
+  	<%= f.submit "New item" %>
+  </div>
+
+<% end %>
+
+<%= link_to "Purchase", new_purchase_path %>

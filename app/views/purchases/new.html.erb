@@ -1,0 +1,14 @@
+<%= form_for @purchase do |f| %>
+  
+  <div class="field">
+  	<%= f.label :Product_codes %>
+  	<%= f.text_field :codes %>
+  </div>
+
+  <div class="actions">
+  	<%= f.submit "Total price" %>
+  </div>
+
+<% end %>
+
+<%= link_to "New Item", new_item_path %><br />
