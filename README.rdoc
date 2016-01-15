@@ -1,3 +1,5 @@
+This is a guide to install ruby, install ruby on rails, then run the app.
+
 For simplicity sake, I will put things that need to be typed between curly braces {}.  It is assumed between steps you've let processes run and potentially input configurations.  Unless otherwise specified use default configuration.
 
 The expression "run" implies you type, or copy and paste text then press enter.
