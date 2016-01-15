@@ -2,7 +2,9 @@
 
 <% @items.each do |item| %>
 <ol>
+	<li><%=item.name%></li>
 	<li>$<%=item.price%></li>
+	<li><%=item.formatted_code %></li>
 </ol>
 <% end %>
 

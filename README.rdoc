@@ -1,28 +1,69 @@
-== README
+For simplicity sake, I will put things that need to be typed between curly braces {}.  It is assumed between steps you've let processes run and potentially input configurations.  Unless otherwise specified use default configuration.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The expression "run" implies you type, or copy and paste text then press enter.
 
-Things you may want to cover:
+1. Search "Terminal" in your spotlight and open it.
 
-* Ruby version
+2. Install "homebrew" by first copying the following between the curley braces (not the braces themselves) {ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"} pasting it in your terminal and pressing enter.
 
-* System dependencies
+3.  You might be prompted with a few options (this will very depending on your OS version), choose the default and enter your password when prompted.
 
-* Configuration
+4.  Run brew update and when it's finished run brew doctor to ensure you have the most up to date version of homebrew and it's working properly.
 
-* Database creation
+5. Run {brew install git} 
 
-* Database initialization
+6. Run {brew install rbenv ruby-build} 
 
-* How to run the test suite
+7. Run {source ~/.bash_profile} and press enter
 
-* Services (job queues, cache servers, search engines, etc.)
+8. Run {rbenv install 2.2.3} and press enter.
 
-* Deployment instructions
+9. Run {rbenv global 2.2.3}
 
-* ...
+10. Run {gem install rails -v 4.2.4}
+
+11. Run {rbenv rehash}
+
+12. Go to github.com and register an account
+
+13. Run {brew install postgresql}
+
+14. Run {ln -sfv /usr/local/opt/postgresql/*plist ~/Library/LaunchAgents}
+
+15. Run launchctl {load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist}
+
+This should have you setup to use Ruby on Rails, from here to run the register app do the following.
+
+1. Open the documents folder (if you don't have one create it inside the folder named after your username)
+
+2. Create a folder inside documents called projects
+
+3. Open your terminal again and run {cd documents/projects}
+
+4. Run {git clone https://github.com/gpressman/cash-register.git}
+
+5. Open a second terminal with apple+N
+
+6. Run {cd documents/projects}
+
+7. Run rails s
+
+8. In your browser visit localhost:3000
+
+To test the functionality of the app.
+
+1. In your terminal run {bundle}
+
+2. Run {rake db:create}
+
+3. Run {rake db:migrate}
+
+4. Run {rake db:seed}
+
+5. Click on "New Item", fill in the fields.  Make sure the product code is exactly 16 characters, and the price does not contain a $. Click on "New item" to send it.
+
+6. Click on "Purchase", copy and paste at least one code into the product codes box.  If you place more than one make sure there are no spaces and they are seperated by a semi colon ";" like so: A12T-GH7Y-QPL9-3NMA;E5T6-9UZ3-TH15-QR88 click on "Total price"  It will add the prices together and apply an 8.75% sales tax.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+

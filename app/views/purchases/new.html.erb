@@ -11,4 +11,12 @@
 
 <% end %>
 
+<% @items.each do |item| %>
+  <ul>
+  	<li><%=item.name %></li>
+  	<li>$<%=item.price %></li>
+  	<li>Code: <%=item.formatted_code %></li>
+  </ul>
+  <% end %>
+
 <%= link_to "New Item", new_item_path %><br />

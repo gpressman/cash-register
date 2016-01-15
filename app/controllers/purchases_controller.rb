@@ -4,6 +4,7 @@ class PurchasesController < ApplicationController
   end
 
   def new
+    @items = Item.all
   	@purchase = Purchase.new
   end
 

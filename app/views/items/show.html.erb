@@ -2,5 +2,8 @@
 
 <p>$<%=@item.price %></p>
 
+<p><%=@item.formatted_code %></p>
+
 <%= link_to "New Item", new_item_path %><br />
 <%= link_to "Purchase", new_purchase_path %>
+<%= link_to "Items", items_path %>
