@@ -5,7 +5,7 @@ class Item < ActiveRecord::Base
   
   #takes code converts all characters to uppercase and adds a - after every 4 chars
   def format_code(code)
-    code.upcase
+    code.upcase!
     code.scan(/.{4}|.+/).join("-") 
   end
 end

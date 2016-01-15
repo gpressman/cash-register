@@ -8,7 +8,7 @@ class Purchase < ActiveRecord::Base
   	items = items.split(";")
     #uses the code to find the corresponding item and pushes the item price into an array
   	items.each do |code|
-  	  item = Item.find_by(product_code: code)
+  	  item = Item.find_by(formatted_code: code)
        cart << item.price	  
     end
     #adds prices together and applies tax
