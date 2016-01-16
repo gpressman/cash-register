@@ -10,13 +10,13 @@ The expression "run" implies you type, or copy and paste text then press enter.
 
 3.  You might be prompted with a few options (this will very depending on your OS version), choose the default and enter your password when prompted.
 
-4.  Run brew update and when it's finished run brew doctor to ensure you have the most up to date version of homebrew and it's working properly.
+4.  Run {brew update} and when it's finished run {brew doctor} to ensure you have the most up to date version of homebrew and it's working properly.
 
 5. Run {brew install git} 
 
 6. Run {brew install rbenv ruby-build} 
 
-7. Run {source ~/.bash_profile} and press enter
+7. Run {source ~/.bash_profile} 
 
 8. Run {rbenv install 2.2.3} and press enter.
 
@@ -32,11 +32,11 @@ The expression "run" implies you type, or copy and paste text then press enter.
 
 14. Run {ln -sfv /usr/local/opt/postgresql/*plist ~/Library/LaunchAgents}
 
-15. Run launchctl {load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist}
+15. Run {launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist}
 
 This should have you setup to use Ruby on Rails, from here to run the register app do the following.
 
-1. Open the documents folder (if you don't have one create it inside the folder named after your username)
+1. Open the documents folder (if you don't have one create it inside the folder named after your computer account name)
 
 2. Create a folder inside documents called projects
 
@@ -48,7 +48,7 @@ This should have you setup to use Ruby on Rails, from here to run the register a
 
 6. Run {cd documents/projects}
 
-7. Run rails s
+7. Run {rails s}
 
 8. In your browser visit localhost:3000
 
